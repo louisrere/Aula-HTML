@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Ford</title>
 </head>
+
 <body>
-    <h1>Isso é um titulo</h1>
-    <p>Add a README file and start coding in a secure, configurable, and dedicated development environment.</p>
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <label for="Username">Usuário</label>
+        <br>
+        <input type="text" id="Username" name="Username" required>
+        <br>
+        <label for="password">Senha</label>
+        <br>
+        <Input type="text" id="password" name="password" required>
+        <br>
+        <br>
+        <button type="submit">Entrar</button>
+    </form>
+    <br>
+    <hr>
+    <hr>
+    <hr>
+    <h2>Registro</h2>
+    <form action="register.php" method="post">
+        <label for="Username">Usuário</label>
+        <br>
+        <input type="text" id="Username" name="Username" required>
+        <br>
+        <label for="password">Senha</label>
+        <br>
+        <Input type="text" id="password" name="password" required>
+        <br>
+        <br>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <h4>Sexo biológico</h4>
+
+    <input type="radio" name="sexo" value="M"> Masculino
+    <br>
+    <input type="radio" name="sexo" value="F"> Feminino
+
+    <h4>Interesses</h4>
+
+    <input type="checkbox" name="Interesses" value="Fi"> Filme
+    <br>
+    <input type="checkbox" name="Interesses" value="Fu"> Futebol
+    <br>
+    <input type="checkbox" name="Interesses" value="V"> Viajar
+    <br>
+    <input type="checkbox" name="Interesses" value="L"> Ler
+    <br>
+    <h4>Estado</h4>
+    <select name="Estado">
+        <option value="AC">AC</option>
+        <option value="AL">AP</option>
+        <option value="AP">AP</option>
+        <option value="BA">BA</option>
+        <option value="RJ">RJ</option>
+        <option value="SP">SP</option>
+        <option value="SC">SC</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    Observações:
+    <textarea name="" id=""></textarea>
+    <br>
+    <br>
+    <input type="file" accept="image">
+    <br>
+    <input type="submit" value="Cadastrar">
 
 </body>
+
 </html>
